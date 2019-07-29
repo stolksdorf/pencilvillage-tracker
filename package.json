@@ -18,7 +18,7 @@
       "client/main/main.jsx"
     ],
     "template": "client/html.template.js",
-    "rootPath": "/pencilvillage",
+    "rootPath": "/pencilvillage-tracker",
     "paths": {
       "build": "./docs"
     }
