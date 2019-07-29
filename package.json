@@ -1,0 +1,44 @@
+{
+  "name": "pencilvillage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vitreum --static",
+    "dev": "vitreum --dev --static",
+    "postinstall": "npm run build",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "vitreum": {
+    "targets": [
+      "client/main/main.jsx"
+    ],
+    "template": "client/html.template.js",
+    "rootPath": "/pencilvillage",
+    "paths": {
+      "build": "./docs"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "classnames": "^2.2.6",
+    "pico-conf": "^1.5.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "vitreum": "^5.7.1"
+  }
+}

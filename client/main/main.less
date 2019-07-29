@@ -1,0 +1,65 @@
+
+html, body{
+	font-family : 'Noto Sans', sans-serif;
+	margin: 0;
+}
+.Main{
+	//background-image : require('./gridme.png');
+	display: flex;
+	flex-wrap: wrap;
+	h1{
+		width : 100%;
+		text-align: center;
+	}
+	.ResourceSection, .DiceSection{
+		width: 50%;
+	}
+
+
+
+	.ResourceSection{
+		h3{
+			margin: 0;
+			text-transform: uppercase;
+			font-size: 0.8em;
+			font-weight: 800;
+		}
+		.group{
+			display         : flex;
+			width           : 25px;
+			flex-wrap       : wrap;
+			flex-direction  : column;
+			align-items     : flex-start;
+			justify-content : flex-start;
+			font-size: 1.2em;
+			&.wood .block>div{ background-color: #94582c; }
+			&.stone .block>div{ background-color: black; }
+			&.gold .block>div{ background-color: #9c7500; }
+		}
+		.block{
+			padding : 0.2em;
+			cursor  : pointer;
+			opacity : 0.2;
+			&>div{
+				height        : 2em;
+				width         : 2em;
+				border-radius : 8px;
+			}
+			//flex : 0;
+			&.filled{
+				opacity : 1;
+			}
+		}
+		.depots{
+			display : flex;
+			.block>div{ background-color: black;}
+		}
+	}
+	.DiceSection{
+		text-align: center;
+		font-size : 6em;
+		> div{
+			cursor : pointer;
+		}
+	}
+}

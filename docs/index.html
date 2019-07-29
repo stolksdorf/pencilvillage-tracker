@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Doctype HTML5 -->
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+		<link href='//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css' />
+
+		<link rel='icon' type='image/png' href='/assets/favicon.png' />
+		<link rel='stylesheet' type='text/css' href='/pencilvillage/main/bundle.css' />
+		<title>Pencilvillage Tracker</title>
+	</head>
+	<body><main id='vitreum-root'><div class="Main" data-reactroot=""><h1>Pencilvillage Tracker</h1><div class="ResourceSection"><h3>Wood</h3><div class="wood group" style="height:3em"><div class="block"><div></div></div><div class="block"><div></div></div><div class="block"><div></div></div><div class="block"><div></div></div></div><h3>Stone</h3><div class="stone group" style="height:3em"><div class="block"><div></div></div><div class="block"><div></div></div><div class="block"><div></div></div><div class="block"><div></div></div></div><h3>Gold</h3><div class="gold group" style="height:3em"><div class="block"><div></div></div><div class="block"><div></div></div><div class="block"><div></div></div><div class="block"><div></div></div></div><hr/><h3>Depots</h3><div class="depots"><div class="block"><div></div></div><div class="block"><div></div></div><div class="block"><div></div></div><div class="block"><div></div></div></div></div><div class="DiceSection"><div class="d6">⚀</div><div class="2d6">⚀<!-- -->⚀</div></div></div></main></body>
+	<script src='/pencilvillage/libs.js'></script>
+	<script src='/pencilvillage/main/bundle.js'></script>
+	<script>
+		(function(){
+			require('react-dom').hydrate(
+				require('react').createElement(main, undefined),
+				document.getElementById('vitreum-root')
+			);
+		})();
+	</script>
+</html>
